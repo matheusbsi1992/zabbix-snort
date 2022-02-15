@@ -35,6 +35,7 @@ a finalidade de automatizar e otimizar a resolução de incidentes identificados
 - ``Paradigma de orientação a objetos``
 - ``Zabbix``
 - ``Snort``
+- ``MySQL Server``
 
 ## 📁 Acesso ao projeto
 Você pode acessar os arquivos do projeto clicando [aqui](http://www.zabbixbrasil.org//files/TCC_MATHEUS_SANTOS_ANDRADE%20_IFS_SISTEMAS_DE_INFORMACAO_2018_FINAL.pdf).
