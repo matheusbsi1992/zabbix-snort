@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto Zabbix Snort - TCC </h1>
+<h1 align="center"> Projeto Zabbix Snort </h1>
 <h1 align="center"> MONITORAMENTO INTEGRADO DE SEGURANÇA E DESEMPENHO DE 
 ATIVOS DE REDES DE COMPUTADORES </h1>
 
@@ -37,4 +37,4 @@ a finalidade de automatizar e otimizar a resolução de incidentes identificados
 - ``Zabbix``
 
 ## 📁 Acesso ao projeto
-Você pode acessar o projeto clicando [aqui](http://www.zabbixbrasil.org//files/TCC_MATHEUS_SANTOS_ANDRADE%20_IFS_SISTEMAS_DE_INFORMACAO_2018_FINAL.pdf). Ou [aqui]().
+Você pode acessar o projeto clicando [aqui](http://www.zabbixbrasil.org//files/TCC_MATHEUS_SANTOS_ANDRADE%20_IFS_SISTEMAS_DE_INFORMACAO_2018_FINAL.pdf).
