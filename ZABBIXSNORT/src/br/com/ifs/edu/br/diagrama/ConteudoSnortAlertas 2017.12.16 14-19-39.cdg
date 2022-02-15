@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ConteudoSnortAlertas">
+  <ClassDiagramComponents>
+    <Class name="Dadosnort" package="br.com.ifs.edu.transfer" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="codigoznort" type="int" visibility="private"/>
+        <Field name="datatempoznort" type="Timestamp" visibility="private"/>
+        <Field name="mensagemznort" type="String" visibility="private"/>
+        <Field name="protocoloznort" type="String" visibility="private"/>
+        <Field name="iporigemznort" type="String" visibility="private"/>
+        <Field name="ipdestinoznort" type="String" visibility="private"/>
+        <Field name="portaorigemznort" type="String" visibility="private"/>
+        <Field name="portadestinoznort" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Timestamp" name="datatempoznort"/>
+          <Argument type="String" name="mensagemznort"/>
+          <Argument type="String" name="protocoloznort"/>
+          <Argument type="String" name="iporigemznort"/>
+          <Argument type="String" name="ipdestinoznort"/>
+          <Argument type="String" name="portaorigemznort"/>
+          <Argument type="String" name="portadestinoznort"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigoznort" returnType="int" visibility="public"/>
+        <Method name="setCodigoznort" returnType="void" visibility="public">
+          <Argument type="int" name="codigoznort"/>
+        </Method>
+        <Method name="getDatatempoznort" returnType="Timestamp" visibility="public"/>
+        <Method name="setDatatempoznort" returnType="void" visibility="public">
+          <Argument type="Timestamp" name="datatempoznort"/>
+        </Method>
+        <Method name="getMensagemznort" returnType="String" visibility="public"/>
+        <Method name="setMensagemznort" returnType="void" visibility="public">
+          <Argument type="String" name="mensagemznort"/>
+        </Method>
+        <Method name="getProtocoloznort" returnType="String" visibility="public"/>
+        <Method name="setProtocoloznort" returnType="void" visibility="public">
+          <Argument type="String" name="protocoloznort"/>
+        </Method>
+        <Method name="getIporigemznort" returnType="String" visibility="public"/>
+        <Method name="setIporigemznort" returnType="void" visibility="public">
+          <Argument type="String" name="iporigemznort"/>
+        </Method>
+        <Method name="getIpdestinoznort" returnType="String" visibility="public"/>
+        <Method name="setIpdestinoznort" returnType="void" visibility="public">
+          <Argument type="String" name="ipdestinoznort"/>
+        </Method>
+        <Method name="getPortaorigemznort" returnType="String" visibility="public"/>
+        <Method name="setPortaorigemznort" returnType="void" visibility="public">
+          <Argument type="String" name="portaorigemznort"/>
+        </Method>
+        <Method name="getPortadestinoznort" returnType="String" visibility="public"/>
+        <Method name="setPortadestinoznort" returnType="void" visibility="public">
+          <Argument type="String" name="portadestinoznort"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Zabbixsender" package="br.com.ifs.edu.zabbixsender" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="zabbixSender" returnType="void" visibility="public">
+          <Argument type="String" name="chave"/>
+          <Argument type="int" name="valorexistente"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Leitura" package="br.com.ifs.edu.leitura" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="leituraDados" returnType="List&lt;Dadosnort&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DadosnortDAO" package="br.com.ifs.edu.dao" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="conectar" type="Conexao" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="cadastroDadoSnort" returnType="boolean" visibility="public">
+          <Argument type="Dadosnort" name="dados"/>
+        </Method>
+        <Method name="itemPortScan" returnType="int" visibility="public"/>
+        <Method name="itemDoS" returnType="int" visibility="public"/>
+        <Method name="itemPingFlood" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PrincipalTeste" package="br.com.ifs.edu.principal" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="ifsargs"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Conexao" package="br.com.ifs.edu.conexao" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="ip" type="String" visibility="public"/>
+        <Field name="banco" type="String" visibility="public"/>
+        <Field name="user" type="String" visibility="public"/>
+        <Field name="senha" type="String" visibility="public"/>
+        <Field name="porta" type="String" visibility="public"/>
+        <Field name="sql" type="StringBuilder" visibility="public"/>
+        <Field name="ps" type="PreparedStatement" visibility="public"/>
+        <Field name="rs" type="ResultSet" visibility="public"/>
+        <Field name="con" type="Connection" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="ip"/>
+          <Argument type="String" name="banco"/>
+          <Argument type="String" name="user"/>
+          <Argument type="String" name="senha"/>
+          <Argument type="String" name="porta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="sqlB" returnType="StringBuilder" visibility="public"/>
+        <Method name="getSql" returnType="StringBuilder" visibility="public"/>
+        <Method name="setSql" returnType="void" visibility="public">
+          <Argument type="StringBuilder" name="sql"/>
+        </Method>
+        <Method name="setIp" returnType="void" visibility="public">
+          <Argument type="String" name="ip"/>
+        </Method>
+        <Method name="setBanco" returnType="void" visibility="public">
+          <Argument type="String" name="banco"/>
+        </Method>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="String" name="user"/>
+        </Method>
+        <Method name="setSenha" returnType="void" visibility="public">
+          <Argument type="String" name="senha"/>
+        </Method>
+        <Method name="setPorta" returnType="void" visibility="public">
+          <Argument type="String" name="porta"/>
+        </Method>
+        <Method name="getPs" returnType="PreparedStatement" visibility="public"/>
+        <Method name="setPs" returnType="void" visibility="public">
+          <Argument type="PreparedStatement" name="ps"/>
+        </Method>
+        <Method name="getRs" returnType="ResultSet" visibility="public"/>
+        <Method name="setRs" returnType="void" visibility="public">
+          <Argument type="ResultSet" name="rs"/>
+        </Method>
+        <Method name="conectar" returnType="Connection" visibility="public"/>
+        <Method name="desconectar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Util" package="br.com.ifs.edu.util" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="utillidadeData" returnType="Timestamp" visibility="public">
+          <Argument type="String" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DadosnortBO" package="br.com.ifs.edu.bo" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="selecionarDataHorasAtual" returnType="boolean" visibility="public">
+          <Argument type="Timestamp" name="data"/>
+        </Method>
+        <Method name="existeCadastroBO" returnType="boolean" visibility="public">
+          <Argument type="Dadosnort" name="dadosnort"/>
+        </Method>
+        <Method name="getItemPortScan" returnType="int" visibility="public"/>
+        <Method name="getItemDoS" returnType="int" visibility="public"/>
+        <Method name="getItemPingFlood" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="br.com.ifs.edu.leitura.Leitura" target="br.com.ifs.edu.transfer.Dadosnort" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conectar" source="br.com.ifs.edu.dao.DadosnortDAO" target="br.com.ifs.edu.conexao.Conexao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="br.com.ifs.edu.dao.DadosnortDAO" target="br.com.ifs.edu.conexao.Conexao"/>
+    <UseRelation source="br.com.ifs.edu.bo.DadosnortBO" target="br.com.ifs.edu.transfer.Dadosnort" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="br.com.ifs.edu.bo.DadosnortBO" target="br.com.ifs.edu.dao.DadosnortDAO"/>
+    <UseRelation source="br.com.ifs.edu.dao.DadosnortDAO" target="br.com.ifs.edu.transfer.Dadosnort" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
