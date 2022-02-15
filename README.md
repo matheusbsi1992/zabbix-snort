@@ -28,3 +28,12 @@ eficiente entre estas soluções, consequentemente disponibilizando para o geren
 uma aplicação centralizada para com o gerenciamento de todos os elementos conectados, com 
 a finalidade de automatizar e otimizar a resolução de incidentes identificados na rede.
   </h4>
+  
+  ## ✔️ Técnicas e tecnologias utilizadas
+
+- ``Java 8``
+- ``NetBeans``
+- ``Paradigma de orientação a objetos``
+
+## 📁 Acesso ao projeto
+Você pode acessar os arquivos do projeto clicando [aqui](http://www.zabbixbrasil.org//files/TCC_MATHEUS_SANTOS_ANDRADE%20_IFS_SISTEMAS_DE_INFORMACAO_2018_FINAL.pdf).
