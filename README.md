@@ -2,7 +2,7 @@
 <h1 align="center"> MONITORAMENTO INTEGRADO DE SEGURANÇA E DESEMPENHO DE 
 ATIVOS DE REDES DE COMPUTADORES </h1>
 
-A importância da segurança é algo inerente aos sistemas de informação, uma vez que 
+<h4 align="justify"> A importância da segurança é algo inerente aos sistemas de informação, uma vez que 
 é cada vez mais corriqueira a presença de  hackers  nos meios eletrônicos, portanto, é preciso 
 pensar  em  mecanismos  que  sejam  capazes  de  proteger  a  interação  entre  o  usuário  e  o 
 computador, que é a ferramenta que possibilita o contato do internauta com o mundo virtual. 
@@ -27,3 +27,4 @@ monitoramento e segurança de redes e utilizar este conhecimento para construir 
 eficiente entre estas soluções, consequentemente disponibilizando para o gerenciador da rede 
 uma aplicação centralizada para com o gerenciamento de todos os elementos conectados, com 
 a finalidade de automatizar e otimizar a resolução de incidentes identificados na rede.
+  </h4>
